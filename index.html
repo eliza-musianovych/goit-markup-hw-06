@@ -36,6 +36,71 @@
                     <li><a class="contact" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-heroicons-solid_menu-1"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu ">
+            <div class="container mobile-menu-container">
+                <button type="button" class="btn-menu">
+                    <svg class="close-btn-menu" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <nav class="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="./index.html" class="nav-link-menu">Studio</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link nav-link-menu">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link-menu">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="contacts-menu-info">
+                    <ul class="contacts-list-menu">
+                        <li><a class="contact-menu" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="contact-menu" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <div class="menu-icon-container">
+                    <ul class="menu-icon-list">
+                        <li class="menu-icon-item">
+                            <a href="" class="menu-icon-link">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-icon-item">
+                            <a href="" class="menu-icon-link">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-icon-item">
+                            <a href="" class="menu-icon-link">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-icon-item">
+                            <a href="" class="menu-icon-link">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         </header>
         <main>
@@ -243,7 +308,7 @@
                 </ul>
             </div>
         </section>   
-                <section class="portfolio">
+                <section class="portfolio hidden">
                     <div class="container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list-container">
@@ -327,7 +392,7 @@
              </div>
             </section> 
         </main>
-    <footer class="footer">
+    <footer class="footer hidden">
             <div class="container footer">
                 <div class="footer-text-container">
                 <a class="logo-footer" href="./index.html">Web<span class="logo-span">Studio</span></a>
@@ -383,7 +448,7 @@
             </div>
         </div>
     </footer> 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
         <div class="modal">
             <button type="button" class="close-btn" aria-label="Закрити">
                 <svg class="close-btn-icon" width="8" height="8" viewBox="0 0 8 8" fill="none">
