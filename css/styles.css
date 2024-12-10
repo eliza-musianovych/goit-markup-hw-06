@@ -1150,6 +1150,12 @@ input:focus+svg {
     color: #4d5ae5;
 }
 
+.label.terms-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .user-privacy-container {
     margin-bottom: 24px;
 }
@@ -1166,6 +1172,7 @@ input:focus+svg {
     fill: transparent;
     cursor: pointer;
 }
+
 
 .terms:checked+.label>span {
     background-color: #404BBF;
