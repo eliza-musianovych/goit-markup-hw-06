@@ -147,8 +147,7 @@ button {
         display: none;
     }
 
-    .navigation {
-        display: flex;
+    .container.header-container {
         justify-content: space-between;
     }
 
@@ -200,6 +199,7 @@ button {
 
 .contacts-info {
     display: block;
+    align-items: end;
 }
 
 .contacts-info-list {
@@ -214,7 +214,8 @@ button {
     text-decoration: none;
     color: #434455;
     font-style: normal;
-    line-height: 1.5;
+    font-size: 11px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     transition-property: color;
     transition-duration: 250ms;
@@ -236,6 +237,13 @@ button {
 .contacts-info {
     font-style: normal;
 }
+}
+
+@media screen and (min-width: 1158px) {
+    .contact {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
 
 /*mobile-menu*/
@@ -519,7 +527,7 @@ button {
 .advantages-list-container {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 72px;
+    row-gap: 72px;
 }
 
 .advantages-list {
@@ -539,7 +547,7 @@ button {
 
 @media screen and (min-width: 768px) {
     .advantages-list-container {
-        row-gap: 24px;
+        column-gap: 24px;
 }
 
     .advantages-list {
@@ -571,7 +579,7 @@ button {
         .icon {
             fill: #FFFFFF;
         }
-    }
+
     .advantages-list {
         width: calc((100% - 24px * 3) / 4);
     }
@@ -592,7 +600,7 @@ button {
 .team-list-container {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 72px;
+    row-gap: 72px;
 }
 
 .team-list {
@@ -654,7 +662,9 @@ button {
 
 @media screen and (min-width: 768px) {
     .team-list-container {
-       row-gap: 24px; 
+       column-gap: 24px; 
+       margin-left: 92px;
+       margin-right: 92px;
     }
     
     .team-list {
@@ -663,8 +673,16 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-list-container {
+        margin: 0;
+    }
+
     .team-list {
-        width: calc((100% - 24px *3) / 4);
+        width: calc((100% - 24px * 3) / 4);
     }
     
 }
@@ -683,11 +701,12 @@ button {
 
 .portfolio-list-container {
     display: flex;
-    flex-direction: column;
-    gap: 48px;
+    flex-wrap: wrap;
+    row-gap: 48px;
 }
 
 .portfolio-list {
+    width: 100%;
     background-color: #FFFFFF;
     cursor: pointer;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -734,6 +753,27 @@ button {
     border-top: none;
 }
 
+@media screen and (min-width: 768px) {
+    .portfolio-list-container {
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+    
+    .portfolio-list {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-list-container {
+        row-gap: 48px;
+    }
+        .portfolio-list {
+            width: calc((100% - 24px * 2) / 3);
+        }
+    
+}
+
 /*Footer*/
 .footer {
     background-color: #2E2F42;
@@ -743,9 +783,13 @@ button {
     padding-top: 96px;
     padding-bottom: 96px;
     display: flex;
-    flex-direction: column;
-    gap: 72px;
+    flex-wrap: wrap;
     align-items: center;
+    row-gap: 72px;
+}
+
+.social {
+    margin: 0 auto;
 }
 
 .trailing-icons-footer {
@@ -868,6 +912,49 @@ button {
 
 .icon-send {
     fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .container.footer {
+        align-items: flex-start;
+        column-gap: 24px;
+    }
+    
+    .footer-text-container {
+        width: 264px;
+    }
+
+    .logo-footer {
+        margin-left: 0;
+        margin-right: 149px;
+    }
+
+    .social {
+        margin: 0;
+    }
+
+    .subscribe {
+        width: 453px;
+    }
+
+    .subscribe-form {
+        display: flex;
+        gap: 24px;
+    }
+    .subscribe-btn {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container.footer {
+            column-gap: 80px;
+        }
+    
+    .footer-text-container {
+        margin-right: 40px;
+    }
+    
 }
 
 /*modal*/
