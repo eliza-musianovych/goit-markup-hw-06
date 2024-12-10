@@ -1051,6 +1051,14 @@ button {
     gap: 8px;
 }
 
+.form-container {
+    width: 100%;
+}
+
+.form-comment {
+    width: 100%;
+}
+
 .label {
     font-weight: 400;
     font-size: 12px;
@@ -1202,4 +1210,10 @@ input:focus+svg {
 
 .send-btn:focus {
     background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+    }
 }
