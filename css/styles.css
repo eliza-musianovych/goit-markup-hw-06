@@ -106,7 +106,9 @@ button {
 }
 
 .container.header-container {
+    padding: 16px;
     display: flex;
+    justify-content: space-between;
 }
 
 .navigation {
@@ -146,12 +148,13 @@ button {
     }
 
     .container.header-container {
-        justify-content: space-between;
+        padding: 0 16px;
     }
 
     .logo {
         margin-right: 120px;
     }
+
 .navigation-list {
     display: flex;
     align-items: center;
@@ -248,6 +251,13 @@ button {
     .logo {
         margin-right: 76px;
     }
+
+    .contacts-info-list {
+        flex-direction: row;
+        gap: 40px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 /*mobile-menu*/
@@ -305,25 +315,25 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn-menu:hover {
+.btn-menu:hover {
     background-color: #404bbf;
     border: none;
 }
 
-.close-btn-menu:focus {
+.btn-menu:focus {
     background-color: #404bbf;
     border: none;
 }
 
-.close-btn-icon {
+.close-btn-menu {
     fill: #2E2F42;
 }
 
-.close-btn:hover .close-btn-icon {
+.btn-menu:hover .close-btn-menu {
     fill: #fff;
 }
 
-.close-btn:focus .close-btn-icon {
+.btn-menu:focus .close-btn-menu {
     fill: #ffffff;
 }
 
@@ -491,7 +501,8 @@ button {
 @media screen and (min-width: 768px) {
     .main-title {
         padding: 112px 0;
-        background-image: url(../images/hero/dark-bg-tab.jpg);
+        
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bg-tab.jpg);
     }
     
     .title {
@@ -507,18 +518,18 @@ button {
     .main-title {
         padding: 188px 0;
         max-width: 1440px;
-        background-image: url(../images/hero/dark-bg-desk.jpg);
+        background-color: #2E2F42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bg-desk.jpg);
     }
 
     .title {
        margin-bottom: 45px;
-        margin-left: 472px;
-        margin-right: 472px;
+        margin-left: 316px;
+        margin-right: 316px;
     }
     .container.container-main-title {
             max-width: 1440px;
         }
-
     }
 
 /*main advantages*/
@@ -597,6 +608,10 @@ button {
     padding: 96px 0;
 }
 
+.container.team-container{
+    padding: 0 28px;
+}
+
 .team-title {
     text-align: center;
     text-transform: capitalize;
@@ -667,6 +682,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+    .container.team-container {
+            padding: 0 16px;
+        }
+
     .team-list-container {
        column-gap: 24px; 
        margin-left: 92px;
@@ -924,6 +943,7 @@ button {
     .container.footer {
         align-items: flex-start;
         column-gap: 24px;
+        padding-left: 108px;
     }
     
     .footer-text-container {
